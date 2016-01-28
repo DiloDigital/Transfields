@@ -1,0 +1,97 @@
+//   Helper classes
+
+.hidden
+  display none !important
+  visibility hidden
+
+.visuallyhidden
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+  clip auto
+  height auto
+  margin 0
+  overflow visible
+  position static
+  width auto
+
+.invisible
+  visibility hidden
+
+.clearfix:before,
+.clearfix:after
+  content " "
+  display table
+
+.clearfix
+  *zoom 1
+    &:after
+      clear both
+
+// responsive
+
+.max-width
+    width 100%
+    max-width 1200px
+    padding 0.68em
+    margin-left auto
+    margin-right auto
+    overflow hidden
+    box-sizing border-box
+
+.img-responsive
+    width 100%
+    max-width 100%
+    height auto
+
+.list-none
+    list-style-type none
+
+.sin-margin
+    margin 0
+    padding 0
+
+
+// alineaciones
+
+.text
+    &--center
+        text-align center
+        display block
+    &--left
+        text-align left
+    &--right
+        text-align: right
+    &--justify
+        text-align justify
+    &--yellow
+        color amarillo
+    &--white
+        color blanco
+        text-decoration none
+    &--important
+      font-size 1.4em
+      center-block(80%)
+
+
+// color Background
+
+.bg
+    &--azul
+        background-color azul
+    &--gris-light
+        background-color gris_light
+    &--gris-medium
+        background-color gris_medium
+    &--gris-dark
+        background-color gris_dark
+
+
