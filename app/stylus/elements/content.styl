@@ -1,12 +1,18 @@
-//edit()
+edit()
 
 //Styles
 
 body
 	font 16px/26px Helvetica, Helvetica Neue, Arial
-	
+
 .wrap
-	center(85%)
+	center()
+	width 1200px
+	margin 0 100px 0 100px 0
+	
+	//margin 0 10%
+	//.wrap
+	//center(85%)
 
 	
 /* ==============
@@ -40,13 +46,15 @@ main
 
 header
 	.logo
+		float left
 		padding 30px 0
-		col(1/3, offset:-1/3)
+		//col(1/3, offset:-1/3)
 		img
 			width 320px
 	nav
+		float right
 		margin-top 30px
-		col(1/3)
+		//col(1/3)
 		ul
 			padding 0
 			margin 0
@@ -82,13 +90,17 @@ article
 	padding 40px 0
 
 .principal__box 
-	col(2/3)
+	width 69%
+	float left
+	//col(2/3)
 	img
 		padding-top 40px
 		display inline
 	
 .contact__form
-	col(1/3)
+	width 29%
+	float right
+	//col(1/3)
 	padding 20px 40px
 	box-shadow 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 	-webkit-box-sizing border-box
@@ -97,11 +109,15 @@ article
 	
 
 .flota
-	center()
+	cf()
 	box-shadow 4px 4px 20px 0px rgba(50, 50, 50, 0.4)
 	border-radius 120px
 	h3
-		col(1/3)
+		margin 0 auto
+		float left
+		margin 40px
+		margin-left 70px
+		//col(1/3)
 	
 .que_hacemos
 	padding 20px 0
@@ -111,6 +127,8 @@ article
 
 
 .nuestros_servicios
+	width 100%
+	
 	padding 30px 0
 	h2, h3
 		color gris_medium
@@ -118,31 +136,45 @@ article
 		width 50%
 		margin 0 auto
 
-.servicios_box
-	center()
-	margin 60px 0
-	.servicio
-		col(1/3)
-		img
-			border-radius 50%
+	.servicios_box
+		width 100%
+		background peru
+		margin-left 100px
+		//center()
+		.servicio
+			text-align center
+			margin 60px 0
+			width 28%
+			float left
+			//col(1/3)
+			img
+				border-radius 50%
 
 
 .contacto
+	clear both
 	padding 30px 0
 
 // footer
 
 
+.footer-container
+	width 100%
+	background black
+
 footer
 	.pie
-		col(1/3, offset:1/3)
+		float left
+		margin-left 460px
 		padding 10px 0
 		a
 			text-align center
 			color blanco
 			text-decoration none
 	.social
-		col(1/3)
+		float right
 		text-align right
 		margin-top 22.5px
+		a
+			margin 5px
 
