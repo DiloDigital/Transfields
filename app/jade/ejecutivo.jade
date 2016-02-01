@@ -11,15 +11,15 @@ body
 	//- include header.jade
 	main.main.nr-max-width.bg--gris-medium
 		div.wrap
-			article
-				img(src="img/portada.png", class="img-responsive", alt="portada transfields")
-				h1.title.title--main Autos de lujo para ejecutivos de lujo
+			article.ejecutivo
+				h2.title.title--sub2 Autos de lujo para ejecutivos de lujo
 				p.text--white Sus altos ejecutivos, socios e invesores perecen sentirse especiales. Bríndeles la mejor atencion, transportándolos en vehículos de primer nivel.
-			.contact__form
+			img(src="img/banner_lujo.png", class="image-responsive", alt="portada transfields")
+			.contact__form.ejecutivo
 				.contact__information
 					p Llámanos
 					.fono
-						p 9 000 7317
+						p 56 226961510
 					p o escríbenos
 				.contact__formulario
 					form(action="", method="POST", class="form")
@@ -48,47 +48,49 @@ body
 		div.wrap
 			h2.title.title--sub2.text--gris--dark ¿Que hacemos?
 			p.text--white Transportamos a tus altos ejecutivos al destino que tu prefieras para lo cual contamos con una amplia flota acorde a todo tipo de necesidad desde vehículos Sedan modernos para pocos pasajeros, amplias Vans que nos permiten recoger a un grupo mediano o incluso buses de primera que te permitan transportar con comodidad a toda una delegacion.
-	.divider_autos
-		img(src="img/que_hacemos.png", class="img-responsive", alt="servicios empresariales")
+	.divider_somos
+		img(src="img/somos_lujo.png", class="img-responsive", alt="servicios empresariales")
 
 	section.servicios.nr-max-width.bg--blanco
 		div.wrap
-			.servicios__info
+			.servicios__info.ejecutivo
 				h2.title.title--sub2.text--gris-dark ¿Porque elegirnos?
 				p Porque tu y tus altos ejecutivos son una prioridad para nosotros y nos comprometemos con brindar el mejor servicio.
 				p Contamos con autos modernos y un equipo humano gentil y altamente capacitado.
 
-			.servicios__item
-				.servicio.ejecutivo
-					img(src="img/servicio_ejecutivo.png", class="image-responsive", alt="servicio ejecutivo")
-					h3.title.title--sub3 SANTIAGO
-					p Servicio aeropuerto-hotel, hasta 6 personas cómodas
-					br
-					tabla.normal
-						tr
-							th $80.000
-							th US$112
-					
-				.servicio.ejecutivo
-					img(src="img/servicio_transporte.png", class="image-responsive", alt="servicio de transporte")
-					h3.title.title--sub3 VIÑA del Mar
-					p Santiago-Viña-Santiago por el día, hasta 6 personas cómodas
-					br
-					tabla.normal
-						tr
-							th $320.000
-							th US$448
+			.servicios__item.ejecutivo
+				.servicio
+					img(src="img/paquete1_lujo.png", class="image-responsive", alt="servicio ejecutivo")
+					.servicio-position.ejecutivo
+						h3.title.title--sub3 SANTIAGO
+						br/
+						p Servicio aeropuerto-hotel, hasta 6 personas cómodas
+						
+						tabla.normal
+							tr
+								th $80.000
+								th.text--purpura US$112
+				.servicio
+					img(src="img/paquete2_lujo.png", class="image-responsive", alt="servicio de transporte")
+					.servicio-position.ejecutivo
+						h3.title.title--sub3 VIÑA del Mar
+						p Santiago-Viña-Santiago por el día, hasta 6 personas cómodas
+						br/
+						tabla.normal
+							tr
+								th $320.000
+								th.text--purpura US$448
+				.servicio
+					img(src="img/paquete3_lujo.png", class="image-responsive", alt="servicio de turismo")
+					.servicio-position.ejecutivo
+						h3.title.title--sub3 CORDILLERA
+						p Santiago-Colorado, la Parva, Valle Nevado-Santiago por el día, hasta 6 personas cómodas
+						tabla.normal
+							tr
+								th $320.000
+								th.text--purpura US$448
 
-					.btn__ver-mas
-						a(href="#") Cotiza
-
-				.servicio.ejecutivo
-					img(src="img/servicio_turismo.png", class="image-responsive", alt="servicio de turismo")
-					h3.title.title--sub3 CORDILLERA
-					p Santiago-Colorado, la Parva, Valle Nevado-Santiago por el día, hasta 6 personas cómodas
-					tabla.normal
-						tr
-							th $320.000
-							th US$448
+				.btn__contacto
+					a(href="#") Cotiza
 //-	- include footer.jade
 

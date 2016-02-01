@@ -1,5 +1,10 @@
 edit()
 
+/**
+	padding 0
+	margin 0
+*/
+
 /* ==============
     Styles
    ============== */
@@ -90,11 +95,11 @@ section.flota.nr-max-width
 .que_hacemos
 	text-align center
 	padding 50px 0
-	p
-		width 80%
-		margin 0 auto
+	//p
+		//width 80%
+		//margin 0 auto
 	
-.divider_autos
+.divider_somos
 	width 1420px
 	img
 		width 100%
@@ -102,17 +107,18 @@ section.flota.nr-max-width
 .servicios
 	text-align center
 	padding 30px 0
+	color gris_dark
 	.servicios__info
 		width 1200px
 		margin 0 auto
 		h2
 			color gris_medium
 		> p
-			width 55%
+			width 70%
 			margin 0 auto
 			
 	.servicios__item
-		width 1000px
+		width 1200px
 		height auto
 		overflow hidden
 		margin 0 auto
@@ -129,15 +135,15 @@ section.flota.nr-max-width
 				padding 10px
 				margin 20px
 			p
-				width 81%
+				width 80%
 				padding-bottom 20px
 				margin 0 auto
 				
 .contacto
 	text-align center
-	padding 30px 0
+	padding 20px 0
 	p
-		width 85%
+		width 80%
 		margin 0 auto
 		padding-bottom 10px
 
@@ -149,7 +155,7 @@ footer
 	.pie
 		float left
 		margin-left 475px
-		padding 10px 0
+		padding 20px 0
 		a
 			text-align center
 			color blanco
@@ -157,8 +163,10 @@ footer
 			font-size 0.9em
 	.social
 		float right
-		text-align right
-		margin-top 22.5px
+		text-align center
+		margin-top 30px
+		margin-left 10px
+		display inline
 		a
 			margin 5px
 			
@@ -184,25 +192,36 @@ footer
 		margin 0 auto
 		padding 60px 0
 		.servicio
-			//background white
+			background white
 			text-align center
 			width 30.5%
 			margin 0px 15px
 			float left
 			img
+				width 100%
 				border-radius 0%
 				margin-bottom 5%
-			h3
-				color purpura
-				padding 10px
-				margin 20px
-			p
-				width 81%
-				padding-bottom 20px
-				margin 0 auto
-			small
-				display inline-block
-				margin 20px
+				
+			.servicio-position
+				position relative
+				bottom 70px
+				
+				h3
+					//bottom 500%
+					//botonn 10px
+					//left 40px
+					color purpura
+					padding 10px
+					margin 20px
+					display block
+					//width 25%
+				p
+					width 81%
+					padding-bottom 20px
+					margin 0 auto
+				small
+					display inline-block
+					margin 20px
 				
 		.btn__contacto
 			clear both
@@ -212,11 +231,92 @@ table.normal
 	width 90%
 	margin 0 auto
 	font-family helvetica
-	font-weight 400
 	font-size 1em
-
 	text-align left
 	
-table.normal td
-	padding 20px
-	color red
+
+
+/* ======================
+    WIDE: Main Ejecutivo
+   ====================== */
+
+	
+
+
+			
+.servicios__item.ejecutivo
+		width 1200px
+		height auto
+		overflow hidden
+		margin 0 auto
+		padding 60px 0
+		.servicio
+			background white
+			text-align center
+			width 30.5%
+			margin 0px 15px
+			float left
+			img
+				width 100%
+				border-radius 0%
+				margin-bottom 5%
+				
+			.servicio-position.ejecutivo
+				position relative
+				bottom 60px
+				
+				h3
+					//bottom 500%
+					//botonn 10px
+					//left 40px
+					color purpura
+					padding 10px
+					margin 20px
+					display block
+					//width 25%
+				p
+					width 90%
+					padding-bottom 20px
+					margin 0 auto
+				small
+					display inline-block
+					margin 20px
+			
+		.btn__contacto
+			clear both
+			
+
+
+table.normal
+	width 90%
+	margin 0 auto
+	font-family helvetica
+	font-size 1em
+	text-align left
+
+
+
+
+.main
+	margin-top 90px
+	text-align center
+	padding 50px 0px
+	article.ejecutivo
+		width 33%
+		float left
+		img
+			position relative
+			width 33%
+			height 400px
+			float left
+			padding-top 40px
+			display inline
+	.contact__form.ejecutivo
+		background red
+		width 29%
+		float right
+		padding 20px 40px
+		box-shadow 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
+		box-sizing border-box
+
+
