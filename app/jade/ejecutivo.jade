@@ -8,13 +8,15 @@ head
 	link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
 	link(href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic', rel='stylesheet', type='text/css')
 body
-	//- include header.jade
-	main.main.nr-max-width.bg--gris-medium
+	include header.jade
+	main.main.nr-max-width.bg--gris-medium.ejecutivo
 		div.wrap
-			article.ejecutivo
-				h2.title.title--sub2 Autos de lujo para ejecutivos de lujo
-				p.text--white Sus altos ejecutivos, socios e invesores perecen sentirse especiales. Bríndeles la mejor atencion, transportándolos en vehículos de primer nivel.
-			img(src="img/banner_lujo.png", class="image-responsive", alt="portada transfields")
+			.article_position
+
+				article.ejecutivo
+					h2.title.title--sub2 Autos de lujo para ejecutivos de lujo
+					p.text--white Sus altos ejecutivos, socios e invesores perecen sentirse especiales. Bríndeles la mejor atencion, transportándolos en vehículos de primer nivel.
+				img(src="img/banner_lujo.png", class="image-responsive", alt="portada transfields")
 			.contact__form.ejecutivo
 				.contact__information
 					p Llámanos
@@ -36,7 +38,7 @@ body
 							label(for="nombre") Mensaje
 							textarea(type="nombre", name="nombre", id="nombre", placeholder="Tu Mensaje")
 						.form__submit
-							input(type="submit", value="Contáctanos")
+							input(type="submit", value="Cotiza")
 
 	section.flota.nr-max-width.bg--gris-dark
 		div.wrap
@@ -44,9 +46,9 @@ body
 			h3.title.title--sub3 Confianza
 			h3.title.title--sub3 Prontitud
 
-	section.que_hacemos.nr-max-width.bg--blanco
+	section.que_hacemos.nr-max-width.bg--blanco.ejecutivo
 		div.wrap
-			h2.title.title--sub2.text--gris--dark ¿Que hacemos?
+			h2.title.title--sub2.text--negro ¿Que hacemos?
 			p.text--white Transportamos a tus altos ejecutivos al destino que tu prefieras para lo cual contamos con una amplia flota acorde a todo tipo de necesidad desde vehículos Sedan modernos para pocos pasajeros, amplias Vans que nos permiten recoger a un grupo mediano o incluso buses de primera que te permitan transportar con comodidad a toda una delegacion.
 	.divider_somos
 		img(src="img/somos_lujo.png", class="img-responsive", alt="servicios empresariales")
@@ -54,7 +56,7 @@ body
 	section.servicios.nr-max-width.bg--blanco
 		div.wrap
 			.servicios__info.ejecutivo
-				h2.title.title--sub2.text--gris-dark ¿Porque elegirnos?
+				h2.title.title--sub2 ¿Porque elegirnos?
 				p Porque tu y tus altos ejecutivos son una prioridad para nosotros y nos comprometemos con brindar el mejor servicio.
 				p Contamos con autos modernos y un equipo humano gentil y altamente capacitado.
 
@@ -92,5 +94,5 @@ body
 
 				.btn__contacto
 					a(href="#") Cotiza
-//-	- include footer.jade
+		include footer.jade
 

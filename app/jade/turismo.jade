@@ -8,13 +8,13 @@ head
 	link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
 	link(href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic', rel='stylesheet', type='text/css')
 body
-	//- include header.jade
+	include header.jade
 	main.main.nr-max-width.bg--verde
 		div.wrap
-			article
-				h1.title.title--main Chile te está esperando
-				img(src="img/portada.png", class="img-responsive", alt="portada transfields")
-				p Vive la experiencia de encontrarte con Chile y sus maravillosos destinos, conoce su historia viva y degusta sus exquisitos platillos. Contrata un paquete a tu medida. ¡CHILE TE ESPERA!
+			article.turismo
+				h2.title.title--main.text--blanco Chile te está esperando
+				img(src="img/banner_turismo.png", class="img-responsive", alt="portada turismo")
+				p.text--important2.text--blanco Vive la experiencia de encontrarte con Chile y sus maravillosos destinos, conoce su historia viva y degusta sus exquisitos platillos. Contrata un paquete a tu medida. ¡CHILE TE ESPERA!
 			.contact__form
 				.contact__information
 					p Llámanos
@@ -38,29 +38,32 @@ body
 						.form__submit
 							input(type="submit", value="Contáctanos")
 
-	section.flota.nr-max-width.bg--verde-dark
-		div.wrap
-			h3.title.title--sub3 Destinos increíbles
-			h3.title.title--sub3 Viajes seguros 
-			h3.title.title--sub3 Confort y amabilidad
+	section.flota.nr-max-width.bg--verde-dark.turismo
+		img(src="img/ventajas_turismo.png", alt="")
+		//- div.wrap
+		//- 	//- h3.title.title--sub3 Destinos increíbles
+		//- 	//- h3.title.title--sub3 Viajes seguros 
+		//- 	//- h3.title.title--sub3 Confort y amabilidad
 
-	section.que_hacemos.nr-max-width.bg--blanco
+	section.que_hacemos.nr-max-width.bg--blanco.turismo
 		div.wrap
-			h2.title.title--sub2.text--gris--dark ¿Que hacemos?
-			p Tenemos recorridos turísticos pensados especialmente para ti. Te enseñaremos Chile y sus maravillas. Existen lugares fabulosos con los que soñarías y nosotros los acercaremos a tí en vehículos seguros y confortables. Contamos con unidades para todo tipo de grupos, desde los más pequeños si prefieres un viaje íntimo, así como Vans o buses si lo tuyo es disfrutar en grupo con familia y amigos.
-	.divider_autos
-		img(src="img/que_hacemos.png", class="img-responsive", alt="servicios empresariales")
+			h2.title.title--sub2.text--gris-medium ¿Que hacemos?
+			p.text--gris-medium Tenemos recorridos turísticos pensados especialmente para ti. Te enseñaremos Chile y sus maravillas. Existen lugares fabulosos con los que soñarías y nosotros los acercaremos a tí en vehículos seguros y confortables. Contamos con unidades para todo tipo de grupos, desde los más pequeños si prefieres un viaje íntimo, así como Vans o buses si lo tuyo es disfrutar en grupo con familia y amigos.
+	
+	.somos_turismo
+		img(src="img/somos_turismo.png", class="img-responsive", alt="servicios empresariales")
 
 	section.servicios.nr-max-width.bg--verde-dark
 		div.wrap
 			.servicios__info.turismo
-				h2.title.title--sub2.text--gris-dark Paquetes a tu medida
-				p.text--white Tenemos recorridos turísticos pensados especialmente para ti. Te enseñaremos Chile y sus maravillas. Existen lugares fabulosos con los que soñarías y nosotros los acercaremos a tí en vehículos seguros y confortables. Contamos con unidades para todo tipo de grupos, desde los más pequeños si prefieres un viaje íntimo, así como Vans o buses si lo tuyo es disfrutar en grupo con familia y amigos.
+				h2.title.title--sub2.text--blanco Paquetes a tu medida
+				br
+				p.text--blanco Tenemos recorridos turísticos pensados especialmente para ti. Te enseñaremos Chile y sus maravillas. Existen lugares fabulosos con los que soñarías y nosotros los acercaremos a tí en vehículos seguros y confortables. Contamos con unidades para todo tipo de grupos, desde los más pequeños si prefieres un viaje íntimo, así como Vans o buses si lo tuyo es disfrutar en grupo con familia y amigos.
 
 			.servicios__item.turismo
 				.servicio
-					img(src="img/servicio_ejecutivo.png", class="image-responsive", alt="servicio ejecutivo")
-					h3.title.title--sub3 Cordillera
+					img(src="img/paquete1_turismo.png", class="image-responsive", height="260", alt="servicio ejecutivo")
+					h3.title.title--sub3.text--purpura Cordillera
 					p Tour a Farellones, Colorado, La Parva, por el día, por bus
 					table.normal
 						tr
@@ -81,8 +84,8 @@ body
 					br
 					br
 				.servicio
-					img(src="img/servicio_transporte.png", class="image-responsive", alt="servicio de transporte")
-					h3.title.title--sub3 VIÑA del Mar
+					img(src="img/paquete2_turismo.png", class="image-responsive", alt="servicio de transporte")
+					h3.title.title--sub3.text--purpura Viña del Mar
 					p Santiago-Viña-Valparaíso-Santiago, por el día, precio por bus
 
 					table.normal
@@ -104,8 +107,8 @@ body
 					br
 					br
 				.servicio
-					img(src="img/servicio_turismo.png", class="image-responsive", alt="servicio de turismo")
-					h3.title.title--sub3 Viña Concha y Toro
+					img(src="img/paquete3_turismo.png", class="image-responsive", alt="servicio de turismo")
+					h3.title.title--sub3.text--purpura Viña Concha y Toro
 					p Santiago-Viña Concha y Toro-Santiago, precio por bus
 					
 					table.normal
@@ -129,8 +132,8 @@ body
 
 	section.contacto.nr-max-width.bg--gris-medium
 		div.wrap
-				h2.title.title--sub2 ¿Por qué elegirnos?
-				p Porque conocemos y amamos Chile tanto como se puede y nos encantará compartir contigo lo grandioso de ésta tierra que nos vio nacer. Chile no es un destino más; es cultura, tradición y modernidad. La tierra de Neruda te está esperando y nosotros estaremos gustosos de compratir esta inolvidable experiencia contigo. No esperes más ¡Comunícate con nosotros que esperamos por ti!
+				h2.title.title--sub2.text--blanco ¿Por qué elegirnos?
+				p.text--blanco Porque conocemos y amamos Chile tanto como se puede y nos encantará compartir contigo lo grandioso de ésta tierra que nos vio nacer. Chile no es un destino más; es cultura, tradición y modernidad. La tierra de Neruda te está esperando y nosotros estaremos gustosos de compratir esta inolvidable experiencia contigo. No esperes más ¡Comunícate con nosotros que esperamos por ti!
 				.btn__contacto
 					a(href="#") Contáctanos
-	//- include footer.jade
+	include footer.jade

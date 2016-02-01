@@ -66,7 +66,7 @@ header
 .main
 	margin-top 90px
 	text-align center
-	padding 50px 0px
+	//padding 80px 0px
 	article 
 		width 69%
 		float left
@@ -80,39 +80,34 @@ header
 		padding 20px 40px
 		box-shadow 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 		box-sizing border-box
-
 .flota
-	box-shadow 4px 4px 20px 0px rgba(50, 50, 50, 0.4)
-	border-radius 120px
-	h3
-		float left
-		margin 40px
-		margin-left 70px
-section.flota.nr-max-width
-	width 1200px
-	margin 0 auto
+	position relative
+	top 0	px
+	img
+		width 100%
 	
 .que_hacemos
+	position relative
+	top -10px
 	text-align center
-	padding 50px 0
-	//p
-		//width 80%
-		//margin 0 auto
+	padding-bottom 120px
 	
-.divider_somos
-	width 1420px
+.somos_portada
+	position relative
+	bottom 80px
+	width 1415px
 	img
 		width 100%
 
 .servicios
 	text-align center
-	padding 30px 0
-	color gris_dark
+	padding-bottom 30px 
+	
 	.servicios__info
 		width 1200px
 		margin 0 auto
 		h2
-			color gris_medium
+			line-height 1
 		> p
 			width 70%
 			margin 0 auto
@@ -180,17 +175,42 @@ footer
     WIDE: Main Turismo
    ====================== */
 
+.servicios.nr-max-width
+	padding-top 60px
+
+
+article.turismo
+	width 67%
+	margin 0 auto
+	img
+		width 80%
+
+.flota.turismo
+	position relative
+	top -10px
+.que_hacemos.turismo
+	position relative
+	top -20px
+
+.somos_turismo
+	position relative
+	top 75px
+	width 1415px
+	img
+		width 100%
+
 .servicios
 	.servicios__info.turismo
+		padding-top 80px
 		> p
 			width 100%
-			
+
 .servicios__item.turismo
 		width 1200px
 		height auto
 		overflow hidden
 		margin 0 auto
-		padding 60px 0
+		padding-top 60px 0
 		.servicio
 			background white
 			text-align center
@@ -205,24 +225,13 @@ footer
 			.servicio-position
 				position relative
 				bottom 70px
-				
 				h3
-					//bottom 500%
-					//botonn 10px
-					//left 40px
-					color purpura
-					padding 10px
-					margin 20px
 					display block
-					//width 25%
 				p
 					width 81%
-					padding-bottom 20px
-					margin 0 auto
 				small
 					display inline-block
-					margin 20px
-				
+					color red
 		.btn__contacto
 			clear both
 
@@ -297,26 +306,83 @@ table.normal
 
 
 
-.main
-	margin-top 90px
+main.main.nr-max-width
+	width 1415px
+
+.main.ejecutivo
+	width 85%
+	margin 0 auto
+	margin-top 40px
 	text-align center
 	padding 50px 0px
+	
 	article.ejecutivo
-		width 33%
-		float left
-		img
-			position relative
+		h2
+			margin-top 13%
+			width 65%
+			text-align left
+		p
 			width 33%
-			height 400px
+			text-align left
+			color white
+			font-size 1.2em
+
+.que_hacemos.ejecutivo
+	h2
+		color negro
+	p
+		color gris_medium
+
+	.article_position
+		//display inline-block
+		//float left
+		width 100%
+		position relative
+		//left 20%
+		padding-top 20px
+		margin-bottom 20px
+		article.ejecutivo
+			//display inline-block
+			position absolute
+			 
+			left 0%
+			width 58%
+			z-index 2
+			text-align left
 			float left
-			padding-top 40px
+		img
+			text-align right
+			//margin 0 auto
+			position absolute
+			left 21%
+			z-index 1
+			//float right
+			width 48%
+			height auto
+			//float left
+			padding-top 9%
 			display inline
 	.contact__form.ejecutivo
-		background red
-		width 29%
 		float right
+		width 29%
 		padding 20px 40px
 		box-shadow 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 		box-sizing border-box
 
 
+
+
+
+/* ======================
+    WIDE: Main Turismo
+   ====================== */
+
+
+article.transporte
+	width 67%
+	margin 0 auto
+	img
+		width 80%
+	p.turismo
+		width 80%
+		
