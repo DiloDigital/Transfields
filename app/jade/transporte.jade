@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	title Transporte
+	link(rel="stylesheet", href="style.css")
+	link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic', rel='stylesheet', type='text/css')
+body
+	//- include header.jade
+	main.main.nr-max-width.bg--verde
+		div.wrap
+			article
+				img(src="img/portada.png", class="img-responsive", alt="portada transfields")
+				h1.title.title--main Escoje tu destino
+				p.text--white Llega a donde guste, te llevaremos con con el mayor de los gustos. ten la completa tranquilidad de que llegaras a tu destino sin preocupacionesy con la mayor de las comodidades.
+			.contact__form
+				.contact__information
+					p Llámanos
+					.fono
+						p 9 000 7317
+					p o escríbenos
+				.contact__formulario
+					form(action="", method="POST", class="form")
+						.form__group
+							label(for="nombre") Nombre
+							input(type="text", name="nombre", id="nombre", placeholder="Tu nombre")
+						.form__group
+							label(for="nombre") Email
+							input(type="text", name="nombre", id="nombre", placeholder="Tu email")
+						.form__gorup
+							label(for="nombre") Telefono
+							input(type="text", name="nombre", id="nombre", placeholder="Tu teléfono")
+						.form__group
+							label(for="nombre") Mensaje
+							textarea(type="nombre", name="nombre", id="nombre", placeholder="Tu Mensaje")
+						.form__submit
+							input(type="submit", value="Contáctanos")
+
+	section.flota.nr-max-width.bg--verde-dark
+		div.wrap
+			h3.title.title--sub3 Conocemos la ruta
+			h3.title.title--sub3 Viajes seguros
+			h3.title.title--sub3 Confort y amabilidad
+
+	section.que_hacemos.nr-max-width.bg--blanco
+		div.wrap
+			h2.title.title--sub2.text--gris--dark ¿Que hacemos?
+			p Transportamos más que pasajeros, a amigos que están a nuestro cuidado. Contamos con una amplia flota a tu disposición a la altura de diferentes necesidades, como diferentes son las personas. Si necesitas una Van pequeña o un amplio y confortable bus, es tuyo. Nuestros conductores son amables y atentos. Por el destino no te preocupes, tú escoge la ruta y nosotros te llevaremos por el camino más seguro.
+	.divider_autos
+		img(src="img/que_hacemos.png", class="img-responsive", alt="servicios empresariales")
+
+	section.servicios.nr-max-width.bg--verde-dark
+		div.wrap
+			.servicios__info
+				h2.title.title--sub2 Paquetes a tu medida
+				p Queremos que todo sea sencillo para tí, así que armamos estos convenientes paquetes qie cubren las necesidades mas solicitadas y siempre a tu medida ;) pero si lo tuyo es algo más específico sólo escríbenos y tendremos excelentes opciones para tí. ¡Te esperamos! 
+
+			.servicios__item
+				.servicio.ejecutivo
+					img(src="img/servicio_ejecutivo.png", class="image-responsive", alt="servicio ejecutivo")
+					h3.title.title--sub3 Seguridad
+					p Tu bienestar es vital para nosotros, es por ello que ocupamos vehiculos modernos y seguros.
+					
+				.servicio.ejecutivo
+					img(src="img/servicio_transporte.png", class="image-responsive", alt="servicio de transporte")
+					h3.title.title--sub3 Calidad
+					p Disfruta de la máxima satisfacción al experimentar un servicio con cuidado en los detalles.
+					.btn__ver-mas
+						a(href="#") Cotiza
+
+				.servicio.ejecutivo
+					img(src="img/servicio_turismo.png", class="image-responsive", alt="servicio de turismo")
+					h3.title.title--sub3 Puntualidad
+					p Sabemos que no hay tiempo que perder, es por ello que llegamos 15min. antes de lo solicitado.
+					
+	section.contacto.nr-max-width.bg--gris-medium
+		div.wrap
+				h2.title.title--sub2 ¿Por qué elegirnos?
+				p Porque amamos lo que hacemos, en consecuencia brindamos nuestros servicios con el mayor de los gustos. Contamos además con una flota moderna con no más de 5 años de antigüedad. Pensamos siempre en tu seguridad y por sobretodas las cosas estás siempre en primer lugar. ¡No esperes más y contáctanos, estamos esperando por tí!
+				.btn__contacto
+					a(href="#") Contáctanos
+	//- include footer.jade
