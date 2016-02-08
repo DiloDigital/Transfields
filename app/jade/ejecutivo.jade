@@ -22,21 +22,22 @@ body
 						p 56 226961510
 					p o escríbenos
 				.contact__formulario
-					form(action="", method="POST", class="form")
+					form(action="mailer.php", method="POST", class="form")
 						.form__group
 							label(for="nombre") Nombre
 							input(type="text", name="nombre", id="nombre", placeholder="Tu nombre")
 						.form__group
-							label(for="nombre") Email
-							input(type="text", name="nombre", id="nombre", placeholder="Tu email")
-						.form__gorup
-							label(for="nombre") Telefono
-							input(type="text", name="nombre", id="nombre", placeholder="Tu teléfono")
+							label(for="correo") Email
+							input(type="correo", name="correo", id="correo", placeholder="Tu email")
 						.form__group
-							label(for="nombre") Mensaje
-							textarea(type="nombre", name="nombre", id="nombre", placeholder="Tu Mensaje")
+							label(for="telefono") Telefono
+							input(type="text", name="telefono", id="telefono", placeholder="Tu teléfono")
+						.form__group
+							label(for="mensaje") Mensaje
+							textarea(name="mensaje", cols="10", rows="5", id="mensaje", placeholder="Tu Mensaje")
 						.form__submit
 							input(type="submit", value="Cotiza")
+						#form-messages
 
 	section.flota_lujo.nr-max-width
 		img(src="img/ventajas_lujo.png", alt="")
@@ -46,7 +47,8 @@ body
 			h2.title.title--sub2.text--negro ¿Que hacemos?
 			br
 			p.text--white Transportamos a tus altos ejecutivos al destino que tu prefieras para lo cual contamos con una amplia flota acorde a todo tipo de necesidad desde vehículos Sedan modernos para pocos pasajeros, amplias Vans que nos permiten recoger a un grupo mediano o incluso buses de primera que te permitan transportar con comodidad a toda una delegacion.
-	.somos_lujo.nr-max-width
+	
+	section.somos_lujo.nr-max-width.bg--blanco
 		img(src="img/somos_lujo.jpg", alt="servicios empresariales")
 
 	section.servicios.nr-max-width.bg--blanco

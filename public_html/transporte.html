@@ -11,7 +11,7 @@
 <body>
   <header class="nr-max-width bg--blanco">
     <div class="header wrap">
-      <div class="logo"><a href="http://transfields.com" target="blank"><img src="img/transfields_logo.png" alt=" transfields"/></a></div>
+      <div class="logo"><a href="http://transfields.com"><img src="img/transfields_logo.png" alt=" transfields"/></a></div>
       <nav>
         <ul>
           <li><a href="http://transfields.com/pago.html">Métodos de Pago</a></li>
@@ -35,26 +35,27 @@
           <p>o escríbenos</p>
         </div>
         <div class="contact__formulario">
-          <form action="" method="POST" class="form">
+          <form action="mailer.php" method="POST" class="form">
             <div class="form__group">
               <label for="nombre">Nombre</label>
               <input type="text" name="nombre" id="nombre" placeholder="Tu nombre"/>
             </div>
             <div class="form__group">
-              <label for="nombre">Email</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu email"/>
-            </div>
-            <div class="form__gorup">
-              <label for="nombre">Telefono</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu teléfono"/>
+              <label for="correo">Email</label>
+              <input type="correo" name="correo" id="correo" placeholder="Tu email"/>
             </div>
             <div class="form__group">
-              <label for="nombre">Mensaje</label>
-              <textarea type="nombre" name="nombre" id="nombre" placeholder="Tu Mensaje"></textarea>
+              <label for="telefono">Telefono</label>
+              <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono"/>
+            </div>
+            <div class="form__group">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" cols="10" rows="5" id="mensaje" placeholder="Tu Mensaje"></textarea>
             </div>
             <div class="form__submit">
               <input type="submit" value="Contáctanos"/>
             </div>
+            <div id="form-messages"></div>
           </form>
         </div>
       </div>
@@ -67,7 +68,7 @@
       <p class="text--gris-medium">Transportamos más que pasajeros, a amigos que están a nuestro cuidado. Contamos con una amplia flota a tu disposición a la altura de diferentes necesidades, como diferentes son las personas. Si necesitas una Van pequeña o un amplio y confortable bus, es tuyo. Nuestros conductores son amables y atentos. Por el destino no te preocupes, tú escoge la ruta y nosotros te llevaremos por el camino más seguro.</p>
     </div>
   </section>
-  <div class="somos_transporte nr-max-width"><img src="img/somos_transporte.jpg" alt="servicios empresariales"/></div>
+  <section class="somos_transporte nr-max-width bg--blanco"><img src="img/somos_transporte.jpg" alt="servicios empresariales"/></section>
   <section class="servicios nr-max-width bg--blanco">
     <div class="wrap">
       <div class="servicios__info">

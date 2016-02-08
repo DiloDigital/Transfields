@@ -11,7 +11,7 @@
 <body>
   <header class="nr-max-width bg--blanco">
     <div class="header wrap">
-      <div class="logo"><a href="http://transfields.com" target="blank"><img src="img/transfields_logo.png" alt=" transfields"/></a></div>
+      <div class="logo"><a href="http://transfields.com"><img src="img/transfields_logo.png" alt=" transfields"/></a></div>
       <nav>
         <ul>
           <li><a href="http://transfields.com/pago.html">Métodos de Pago</a></li>
@@ -23,7 +23,7 @@
   <main class="main nr-max-width bg--verde">
     <div class="wrap">
       <article class="turismo">
-        <h2 class="title title--main text--blanco">Chile te está esperando</h2><img src="img/banner_turismo.png" alt="portada turismo" class="img-responsive"/>
+        <h2 class="title title--main text--blanco">Chile te está esperando</h2><img src="img/banner_turismo.jpg" alt="portada turismo" class="img-responsive"/>
         <p class="text--important2 text--blanco">Vive la experiencia de encontrarte con Chile y sus maravillosos destinos, conoce su historia viva y degusta sus exquisitos platillos. Contrata un paquete a tu medida. ¡CHILE TE ESPERA!</p>
       </article>
       <div class="contact__form">
@@ -34,27 +34,28 @@
           </div>
           <p>o escríbenos</p>
         </div>
-        <div class="contact__formulario">
-          <form action="" method="POST" class="form">
+        <div id="contactanos" class="contact__formulario">
+          <form action="mailer.php" method="POST" class="form">
             <div class="form__group">
               <label for="nombre">Nombre</label>
               <input type="text" name="nombre" id="nombre" placeholder="Tu nombre"/>
             </div>
             <div class="form__group">
-              <label for="nombre">Email</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu email"/>
-            </div>
-            <div class="form__gorup">
-              <label for="nombre">Telefono</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu teléfono"/>
+              <label for="correo">Email</label>
+              <input type="correo" name="correo" id="correo" placeholder="Tu email"/>
             </div>
             <div class="form__group">
-              <label for="nombre">Mensaje</label>
-              <textarea type="nombre" name="nombre" id="nombre" placeholder="Tu Mensaje"></textarea>
+              <label for="telefono">Telefono</label>
+              <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono"/>
+            </div>
+            <div class="form__group">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" cols="10" rows="5" id="mensaje" placeholder="Tu Mensaje"></textarea>
             </div>
             <div class="form__submit">
               <input type="submit" value="Contáctanos"/>
             </div>
+            <div id="form-messages"></div>
           </form>
         </div>
       </div>
@@ -67,7 +68,7 @@
       <p class="text--gris-medium">Tenemos recorridos turísticos pensados especialmente para ti. Te enseñaremos Chile y sus maravillas. Existen lugares fabulosos con los que soñarías y nosotros los acercaremos a tí en vehículos seguros y confortables. Contamos con unidades para todo tipo de grupos, desde los más pequeños si prefieres un viaje íntimo, así como Vans o buses si lo tuyo es disfrutar en grupo con familia y amigos.</p>
     </div>
   </section>
-  <div class="somos_turismo nr-max-width bg--verde-dark"><img src="img/somos_turismo.jpg" alt="servicios empresariales"/></div>
+  <section class="somos_turismo nr-max-width bg--verde-dark"><img src="img/somos_turismo.jpg" alt="servicios empresariales"/></section>
   <section class="servicios nr-max-width bg--verde-dark">
     <div class="wrap">
       <div class="servicios__info turismo">
@@ -144,7 +145,7 @@
             </table><br/><small>El valor de la entrada es adicional, varía entre $12.000 y $22.000 (con Somelier) incluye guía y degustaciones. El servicio debe ser coordinado 24hrs. antes de realizarse.</small>
           </div>
         </div>
-        <div class="btn__contacto"><a href="#">Contáctanos</a></div>
+        <div class="btn__contacto"><a href="http://transfields.com/turismo.html#contactanos">Contáctanos</a></div>
       </div>
     </div>
   </section>

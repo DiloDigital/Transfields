@@ -22,21 +22,22 @@ body
 						p 56 226961510
 					p o escríbenos
 				.contact__formulario
-					form(action="", method="POST", class="form")
+					form(action="mailer.php", method="POST", class="form")
 						.form__group
 							label(for="nombre") Nombre
 							input(type="text", name="nombre", id="nombre", placeholder="Tu nombre")
 						.form__group
-							label(for="nombre") Email
-							input(type="text", name="nombre", id="nombre", placeholder="Tu email")
-						.form__gorup
-							label(for="nombre") Telefono
-							input(type="text", name="nombre", id="nombre", placeholder="Tu teléfono")
+							label(for="correo") Email
+							input(type="correo", name="correo", id="correo", placeholder="Tu email")
 						.form__group
-							label(for="nombre") Mensaje
-							textarea(type="nombre", name="nombre", id="nombre", placeholder="Tu Mensaje")
+							label(for="telefono") Telefono
+							input(type="text", name="telefono", id="telefono", placeholder="Tu teléfono")
+						.form__group
+							label(for="mensaje") Mensaje
+							textarea(name="mensaje", cols="10", rows="5", id="mensaje", placeholder="Tu Mensaje")
 						.form__submit
 							input(type="submit", value="Contáctanos")
+						#form-messages
 
 	section.flota_transporte.nr-max-width.bg--blanco
 		img(src="img/ventajas_transporte.png", alt="")
@@ -47,7 +48,7 @@ body
 			br
 			p.text--gris-medium Transportamos más que pasajeros, a amigos que están a nuestro cuidado. Contamos con una amplia flota a tu disposición a la altura de diferentes necesidades, como diferentes son las personas. Si necesitas una Van pequeña o un amplio y confortable bus, es tuyo. Nuestros conductores son amables y atentos. Por el destino no te preocupes, tú escoge la ruta y nosotros te llevaremos por el camino más seguro.
 	
-	.somos_transporte.nr-max-width
+	section.somos_transporte.nr-max-width.bg--blanco
 		img(src="img/somos_transporte.jpg", alt="servicios empresariales")
 
 	section.servicios.nr-max-width.bg--blanco

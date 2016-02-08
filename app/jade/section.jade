@@ -10,7 +10,7 @@ main.main.nr-max-width.bg--verde
 				.fono
 					p 56 226961510
 				p o escríbenos
-			.contact__formulario
+			.contact__formulario#contactanos
 				form(action="mailer.php", method="POST", class="form", name="contacto",id="contacto")
 					.form__group
 						label(for="nombre") Nombre
@@ -37,7 +37,7 @@ section.que_hacemos.nr-max-width.bg--gris-medium
 		br
 		p.text--important.text--blanco Amamos los autos y cada rincón de Chile es por ello que nos dedicamos mas que al transporte de pasajeros a COMPARTIR EXPERIENCIAS. Chile es un país maravilloso lleno de cultura y tradición a la que nos encantará acercarte. Contamos con recorridos turísticos con rutas muy bien pensadas que harán que tu visita a Chile sea inolvidable. Brindamos además servicios empresariales de transporte de pasajeros y una selecta flota para ejecutivos de alto nivel.
 
-.somos_portada.nr-max-width
+section.somos_portada.nr-max-width.bg--blanco
 	img(src="img/somos_portada.jpg", alt="servicios empresariales")
 
 section.servicios.nr-max-width.bg--blanco
@@ -51,7 +51,7 @@ section.servicios.nr-max-width.bg--blanco
 
 		.servicios__item
 			.servicio.portada
-				img(src="img/servicio1_portada.png", class="image-responsive", alt="servicio ejecutivo")
+				img(src="img/servicio1_portada.jpg", class="image-responsive", alt="servicio ejecutivo")
 				h3.title.title--sub3 Línea Ejecutiva
 				p.text--important Tus altos ejecutivos merecen un trato especial, para ello contamos con una exclusiva flota de Remisse.
 				br
@@ -59,7 +59,7 @@ section.servicios.nr-max-width.bg--blanco
 					a(href="http://transfields.com/ejecutivo.html") Ver más
 
 			.servicio.portada
-				img(src="img/servicio2_portada.png", class="image-responsive", alt="servicio de turismo")
+				img(src="img/servicio2_portada.jpg", class="image-responsive", alt="servicio de turismo")
 				h3.title.title--sub3 Turismo
 				p.text--important Chile y sus misterios te esperan, tenemos recorridos espectaculares que no quieres perder.
 				br
@@ -67,9 +67,10 @@ section.servicios.nr-max-width.bg--blanco
 					a(href="http://transfields.com/turismo.html") Ver más
 
 			.servicio.portada
-				img(src="img/servicio3_portada.png", class="image-responsive", alt="servicio de transporte")
+				img(src="img/servicio3_portada.jpg", class="image-responsive", alt="servicio de transporte")
 				h3.title.title--sub3 Transporte
 				p.text--important Si necesitas desplazar a un grupo de personas contamos con vehículos para todo tipo de necesidad
+				br
 				.btn__ver-mas
 					a(href="http://transfields.com/transporte.html") Ver más
 
@@ -79,5 +80,5 @@ section.contacto.nr-max-width.bg--gris-medium
 			br
 			p.text--blanco Porque tu estás en primer lugar para nosotros y nuestra misión es brindarte una experiencia más que inolvidable, es por ello que contamos con un personal muy atento además de una flota moderna y confortable. No esperes más tiempo, ¡CONTÁCTANOS!
 			.btn__contacto
-				a(href="http://transfields.com") Contáctanos
+				a(href="http://transfields.com/#contactanos") Contáctanos
 
