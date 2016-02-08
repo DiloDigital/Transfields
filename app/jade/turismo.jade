@@ -38,15 +38,16 @@ body
 						.form__submit
 							input(type="submit", value="Contáctanos")
 
-	section.flota.nr-max-width.bg--blanco.turismo
+	section.flota_turismo.nr-max-width.bg--blanco
 		img(src="img/ventajas_turismo.png", alt="")
 
 	section.que_hacemos.nr-max-width.bg--blanco.turismo
 		div.wrap
 			h2.title.title--sub2.text--gris-medium ¿Que hacemos?
+			br
 			p.text--gris-medium Tenemos recorridos turísticos pensados especialmente para ti. Te enseñaremos Chile y sus maravillas. Existen lugares fabulosos con los que soñarías y nosotros los acercaremos a tí en vehículos seguros y confortables. Contamos con unidades para todo tipo de grupos, desde los más pequeños si prefieres un viaje íntimo, así como Vans o buses si lo tuyo es disfrutar en grupo con familia y amigos.
 	
-	.somos_turismo.nr-max-width
+	.somos_turismo.nr-max-width.bg--verde-dark
 		img(src="img/somos_turismo.jpg", alt="servicios empresariales")
 
 	section.servicios.nr-max-width.bg--verde-dark
@@ -59,69 +60,72 @@ body
 			.servicios__item.turismo
 				.servicio
 					img(src="img/paquete1_turismo.jpg", class="image-responsive", height="260", alt="servicio ejecutivo")
-					h3.title.title--sub3.text--purpura Cordillera
-					p Tour a Farellones, Colorado, La Parva, por el día, por bus
-					table.normal
-						tr
-							th 1 a 10 pers.
-							th $160.000
-							th.text--purpura US$225
-						tr
-							th de 11 a 19 pers.
-							th $210.000
-							th.text--purpura US$295
-						tr
-							th de 20 a 30 pers.
-							th $280.000
-							th.text--purpura US$393
-
-					small *Guía turístico no incluido (valor app US$100)
-					br
-					br
-					br
+					.servicio-position
+						h3.title.title--sub3.text--purpura Cordillera
+						p Tour a Farellones, Colorado, La Parva, por el día, por bus
+						table.normal
+							tr
+								th 1 a 10 pers.
+								th $160.000
+								th.text--purpura US$225
+							tr
+								th de 11 a 19 pers.
+								th $210.000
+								th.text--purpura US$295
+							tr
+								th de 20 a 30 pers.
+								th $280.000
+								th.text--purpura US$393
+						br
+						small *Guía turístico no incluido (valor app US$100)
+						br
+						br
+						br
 				.servicio
 					img(src="img/paquete2_turismo.jpg", class="image-responsive", alt="servicio de transporte")
-					h3.title.title--sub3.text--purpura Viña del Mar
-					p Santiago-Viña-Valparaíso-Santiago, por el día, precio por bus
+					.servicio-position
+						h3.title.title--sub3.text--purpura Viña del Mar
+						p Santiago-Viña-Valparaíso-Santiago, por el día, precio por bus
 
-					table.normal
-						tr
-							th 1 a 10 pers.
-							th $160.000
-							th.text--purpura US$225
-						tr
-							th de 11 a 19 pers.
-							th $190.000
-							th.text--purpura US$266
-						tr
-							th de 20 a 30 pers.
-							th $260.000
-							th.text--purpura US$365
-
-					small *Guía turístico no incluido (valor app US$100)
-					br
-					br
-					br
+						table.normal
+							tr
+								th 1 a 10 pers.
+								th $160.000
+								th.text--purpura US$225
+							tr
+								th de 11 a 19 pers.
+								th $190.000
+								th.text--purpura US$266
+							tr
+								th de 20 a 30 pers.
+								th $260.000
+								th.text--purpura US$365
+						br
+						small *Guía turístico no incluido (valor app US$100)
+						br
+						br
+						br
 				.servicio
 					img(src="img/paquete3_turismo.jpg", class="image-responsive", alt="servicio de turismo")
-					h3.title.title--sub3.text--purpura Viña Concha y Toro
-					p Santiago-Viña Concha y Toro-Santiago, precio por bus
-					
-					table.normal
-						tr
-							th 1 a 10 pers.
-							th $100.000
-							th.text--purpura US$140
-						tr
-							th de 11 a 19 pers.
-							th $120.000
-							th.text--purpura US$168
-						tr
-							th de 20 a 30 pers.
-							th $160.000
-							th.text--purpura US$225
-
-					small El valor de la entrada es adicional, varía entre $12.000 y $22.000 (con Somelier) incluye guía y degustaciones. El servicio debe ser coordinado 24hrs. antes de realizarse.
+					.servicio-position
+						h3.title.title--sub3.text--purpura Viña Concha y Toro
+						p Santiago-Viña Concha y Toro-Santiago, precio por bus
+						
+						table.normal
+							tr
+								th 1 a 10 pers.
+								th $100.000
+								th.text--purpura US$140
+							tr
+								th de 11 a 19 pers.
+								th $120.000
+								th.text--purpura US$168
+							tr
+								th de 20 a 30 pers.
+								th $160.000
+								th.text--purpura US$225
+						br
+						small El valor de la entrada es adicional, varía entre $12.000 y $22.000 (con Somelier) incluye guía y degustaciones. El servicio debe ser coordinado 24hrs. antes de realizarse.
 
 				.btn__contacto
 					a(href="#") Contáctanos
@@ -129,6 +133,7 @@ body
 	section.contacto.nr-max-width.bg--gris-medium
 		div.wrap
 				h2.title.title--sub2.text--blanco ¿Por qué elegirnos?
+				br
 				p.text--blanco Porque conocemos y amamos Chile tanto como se puede y nos encantará compartir contigo lo grandioso de ésta tierra que nos vio nacer. Chile no es un destino más; es cultura, tradición y modernidad. La tierra de Neruda te está esperando y nosotros estaremos gustosos de compratir esta inolvidable experiencia contigo. No esperes más ¡Comunícate con nosotros que esperamos por ti!
 				.btn__contacto
 					a(href="#") Contáctanos
