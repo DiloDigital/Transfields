@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	title Formas de Pago
+	link(rel="stylesheet", href="style.css")
+	link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic', rel='stylesheet', type='text/css')
+body
+	include header.jade
+	main.main.nr-max-width.bg--verde
+		div.wrap
+			.servicios__info.pago
+				h2.title.title--sub2.text--blanco Formas de pago
+				br
+				p.text--important2.text--blanco Escoge el método que más te guste, sigue las instrucciones y vive la experiencia Transfields. 
+
+			.servicios__item.pago
+				.servicio
+					.img_paypal
+						img(src="img/paypal.jpg", class="image-responsive", alt="")
+					.servicio-position.pago
+						h3.title.title--sub3 Transferencia Paypal
+						p 1. Ingrese a tu cuenta Paypal.
+						p 2. Seleccione Enviar pago a hola@transfields.com
+						p 3. Determine el importe.
+						p 4. Complete la operación.
+						p 5. Envíenos un correo a hola@transfields.com indicando su usuario Paypal y el monto para confirmar la operación.
+				.servicio
+					img(src="img/transbank.jpg", class="image-responsive", alt="")
+					.servicio-position.pago
+						h3.title.title--sub3 Transferencia Bancaria
+						p 1. Realice la transferencia electrónica o depósito a cualquier banco de la Redbanc a:
+						p TRANSFIELDS SpA <br> CC: 7574061 <br> RUT: 76.205.034-K 
+						p 2. Envíenos una foto del voucher a hola@transfields.com
+
+				.servicio
+					img(src="img/cheque.jpg", class="image-responsive", alt="")
+					.servicio-position.pago
+						h3.title.title--sub3 Cheque Nominativo
+						p 1. Confirme por correo que desea pagar por cheque nominativo.
+						p 2. Tache las palabras impresas "a la orden de" y "a portador", de este modo e cheque es nominativo y sólo podrá pagarse al beneficiado indicado en el cheque.
+						p 3. Páguese a TRANSFIELDS SpA
+						p 4. Anote en el reverso del cheque <br> CC:7574061
+
+	section.servicios.nr-max-width.bg--blanco
+		div.wrap
+			.servicios__item.ventajas
+				.servicio.ventajas
+					img(src="img/ventaja1_transporte.png", class="image-responsive", alt="servicio ejecutivo")
+					h3.title.title--sub3 Seguridad
+					p.text--gris-medium Tu bienestar es vital para nosotros, es por ello que ocupamos vehiculos modernos y seguros.
+					
+				.servicio.ventajas
+					img(src="img/ventaja2_transporte.png", class="image-responsive", alt="servicio de transporte")
+					h3.title.title--sub3 Calidad
+					p.text--gris-medium Disfruta de la máxima satisfacción al experimentar un servicio con cuidado en los detalles.
+					
+
+				.servicio.ventajas
+					img(src="img/ventaja3_transporte.png", class="image-responsive", alt="servicio de turismo")
+					h3.title.title--sub3 Puntualidad
+					p.text--gris-medium Sabemos que no hay tiempo que perder, es por ello que llegamos 15min. antes de lo solicitado.
+						
+
+
+
+
+
+	include footer.jade

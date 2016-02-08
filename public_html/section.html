@@ -14,26 +14,27 @@
         <p>o escríbenos</p>
       </div>
       <div class="contact__formulario">
-        <form action="" method="POST" class="form">
+        <form action="mailer.php" method="POST" name="contacto" id="contacto" class="form">
           <div class="form__group">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre"/>
+            <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required="required"/>
           </div>
           <div class="form__group">
-            <label for="nombre">Email</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu email"/>
-          </div>
-          <div class="form__gorup">
-            <label for="nombre">Telefono</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Tu teléfono"/>
+            <label for="correo">Email</label>
+            <input type="correo" name="correo" id="correo" placeholder="Tu email" required="required"/>
           </div>
           <div class="form__group">
-            <label for="nombre">Mensaje</label>
-            <textarea type="nombre" name="nombre" id="nombre" placeholder="Tu Mensaje"></textarea>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono" required="required"/>
+          </div>
+          <div class="form__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" cols="10" rows="5" id="mensaje" placeholder="Tu Mensaje" required="required"></textarea>
           </div>
           <div class="form__submit">
             <input type="submit" value="Contáctanos"/>
           </div>
+          <div id="form-messages"></div>
         </form>
       </div>
     </div>

@@ -11,9 +11,10 @@
 <body>
   <header class="nr-max-width bg--blanco">
     <div class="header wrap">
-      <div class="logo"><a href="http://transfields.com"><img src="img/transfields_logo.png" alt=" transfields"/></a></div>
+      <div class="logo"><a href="http://transfields.com" target="blank"><img src="img/transfields_logo.png" alt=" transfields"/></a></div>
       <nav>
         <ul>
+          <li><a href="http://transfields.com/pago.html">Métodos de Pago</a></li>
           <li><a href="#" target="blank">Contacto</a></li>
         </ul>
       </nav>
@@ -34,26 +35,27 @@
           <p>o escríbenos</p>
         </div>
         <div class="contact__formulario">
-          <form action="" method="POST" class="form">
+          <form action="mailer.php" method="POST" name="contacto" id="contacto" class="form">
             <div class="form__group">
               <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu nombre"/>
+              <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required="required"/>
             </div>
             <div class="form__group">
-              <label for="nombre">Email</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu email"/>
-            </div>
-            <div class="form__gorup">
-              <label for="nombre">Telefono</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Tu teléfono"/>
+              <label for="correo">Email</label>
+              <input type="correo" name="correo" id="correo" placeholder="Tu email" required="required"/>
             </div>
             <div class="form__group">
-              <label for="nombre">Mensaje</label>
-              <textarea type="nombre" name="nombre" id="nombre" placeholder="Tu Mensaje"></textarea>
+              <label for="telefono">Telefono</label>
+              <input type="text" name="telefono" id="telefono" placeholder="Tu teléfono" required="required"/>
+            </div>
+            <div class="form__group">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" cols="10" rows="5" id="mensaje" placeholder="Tu Mensaje" required="required"></textarea>
             </div>
             <div class="form__submit">
               <input type="submit" value="Contáctanos"/>
             </div>
+            <div id="form-messages"></div>
           </form>
         </div>
       </div>
@@ -104,7 +106,11 @@
     <div class="footer wrap">
       <div class="pie"><a href="http://dilodigital.com" target="blank">
           <p>Diseño y Plan de Marketing - Dilo Digital</p></a></div>
-      <div class="social"><a href="#"><img src="img/social_facebook.png" alt="facebook transfields" width="15" height="30"/></a><a href="#"><img src="img/social_twitter.png" alt="youtube transfields" width="30" height="30"/></a><a href="#"><img src="img/social_instagram.png" alt="instagram transfields" width="30" height="30"/></a></div>
+      <div class="social"><a href="https://www.facebook.com/Transfields-SPA-1610542485835661/?fref=ts" target="blank"><img src="img/social_facebook.png" alt="facebook transfields" width="15" height="30"/></a>
+      </div>
     </div>
   </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
 </body>

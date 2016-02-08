@@ -11,21 +11,22 @@ main.main.nr-max-width.bg--verde
 					p 56 226961510
 				p o escríbenos
 			.contact__formulario
-				form(action="", method="POST", class="form")
+				form(action="mailer.php", method="POST", class="form", name="contacto",id="contacto")
 					.form__group
 						label(for="nombre") Nombre
-						input(type="text", name="nombre", id="nombre", placeholder="Tu nombre")
+						input(type="text", name="nombre", id="nombre", placeholder="Tu nombre",required)
 					.form__group
-						label(for="nombre") Email
-						input(type="text", name="nombre", id="nombre", placeholder="Tu email")
-					.form__gorup
-						label(for="nombre") Telefono
-						input(type="text", name="nombre", id="nombre", placeholder="Tu teléfono")
+						label(for="correo") Email
+						input(type="correo", name="correo", id="correo", placeholder="Tu email",required)
 					.form__group
-						label(for="nombre") Mensaje
-						textarea(type="nombre", name="nombre", id="nombre", placeholder="Tu Mensaje")
+						label(for="telefono") Telefono
+						input(type="text", name="telefono", id="telefono", placeholder="Tu teléfono",required)
+					.form__group
+						label(for="mensaje") Mensaje
+						textarea(name="mensaje", cols="10", rows="5", id="mensaje", placeholder="Tu Mensaje",required)
 					.form__submit
 						input(type="submit", value="Contáctanos")
+					#form-messages
 
 section.flota_portada.nr-max-width.bg--gris-medium
 	img(src="img/ventajas_portada.png", alt="")
@@ -79,3 +80,4 @@ section.contacto.nr-max-width.bg--gris-medium
 			p.text--blanco Porque tu estás en primer lugar para nosotros y nuestra misión es brindarte una experiencia más que inolvidable, es por ello que contamos con un personal muy atento además de una flota moderna y confortable. No esperes más tiempo, ¡CONTÁCTANOS!
 			.btn__contacto
 				a(href="http://transfields.com") Contáctanos
+
