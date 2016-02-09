@@ -6,16 +6,15 @@ head
 	title Turismo
 	link(rel="stylesheet", href="style.css")
 	link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
-	link(href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic', rel='stylesheet', type='text/css')
 body
 	include header.jade
-	main.main.nr-max-width.bg--verde#contactanos
+	main.main.nr-max-width.bg--verde
 		div.wrap
 			article.turismo
 				h2.title.title--main.text--blanco Chile te está esperando
 				img(src="img/banner_turismo.jpg", class="img-responsive", alt="portada turismo")
 				p.text--important2.text--blanco Vive la experiencia de encontrarte con Chile y sus maravillosos destinos, conoce su historia viva y degusta sus exquisitos platillos. Contrata un paquete a tu medida. ¡CHILE TE ESPERA!
-			.contact__form
+			.contact__form#contactanos
 				.contact__information
 					p Llámanos
 					.fono
@@ -130,7 +129,7 @@ body
 						small El valor de la entrada es adicional, varía entre $12.000 y $22.000 (con Somelier) incluye guía y degustaciones. El servicio debe ser coordinado 24hrs. antes de realizarse.
 
 				.btn__contacto
-					a(href="javascript:$.scrollTo('#contactanos',800);") Contáctanos
+					a(href='#contactanos') Contáctanos
 
 	section.contacto.nr-max-width.bg--gris-medium
 		div.wrap
@@ -138,10 +137,7 @@ body
 				br
 				p.text--blanco Porque conocemos y amamos Chile tanto como se puede y nos encantará compartir contigo lo grandioso de ésta tierra que nos vio nacer. Chile no es un destino más; es cultura, tradición y modernidad. La tierra de Neruda te está esperando y nosotros estaremos gustosos de compratir esta inolvidable experiencia contigo. No esperes más ¡Comunícate con nosotros que esperamos por ti!
 				.btn__contacto
-					a(href="javascript:$.scrollTo('#contactanos',800);") Contáctanos
+					a(href='#contactanos') Contáctanos
 	include footer.jade
 
-script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', type='text/javascript', charset='utf-8')
-script(src='js/main.js')
-script(type='“text/javascript”', src='“js/jquery-2.1.4.js”')
-script(type='“text/javascript”', src='“js/jquery.scrollTo.js”')
+script(src='//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js', type='text/javascript', charset='utf-8')
