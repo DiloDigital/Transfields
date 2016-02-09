@@ -26,7 +26,7 @@
         <h1 class="title title--main text--blanco">Contrata ya el vehículo que necesitas</h1>
         <h3 class="title title--sub3 text--blanco">Contamos con unidades para todo tipo de necesidad en el rubro turístico y empresarial</h3>
       </article>
-      <div class="contact__form">
+      <div id="contactanos" class="contact__form">
         <div class="contact__information">
           <p>Llámanos</p>
           <div class="fono">
@@ -35,7 +35,7 @@
           </div>
           <p>o escríbenos</p>
         </div>
-        <div id="contactanos" class="contact__formulario">
+        <div class="contact__formulario">
           <form action="mailer.php" method="POST" name="contacto" id="contacto" class="form">
             <div class="form__group">
               <label for="nombre">Nombre</label>
@@ -100,9 +100,13 @@
     <div class="wrap">
       <h2 class="title title--sub2 text--blanco">¿Por qué elegirnos?</h2><br/>
       <p class="text--blanco">Porque tu estás en primer lugar para nosotros y nuestra misión es brindarte una experiencia más que inolvidable, es por ello que contamos con un personal muy atento además de una flota moderna y confortable. No esperes más tiempo, ¡CONTÁCTANOS!</p>
-      <div class="btn__contacto"><a href="http://transfields.com/#contactanos">Contáctanos</a></div>
+      <div class="btn__contacto"><a href="javascript:$.scrollTo('#contactanos',800);">Contáctanos</a></div>
     </div>
   </section>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/main.js"></script>
+  <script type="“text/javascript”" src="“js/jquery-2.1.4.js”"></script>
+  <script type="“text/javascript”" src="“js/jquery.scrollTo.js”"></script>
   <footer class="nr-max-width bg--negro">
     <div class="footer wrap">
       <div class="pie"><a href="http://dilodigital.com" target="blank">
@@ -112,6 +116,7 @@
     </div>
   </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
   <script src="js/main.js"></script>
+  <script type="“text/javascript”" src="“js/jquery-2.1.4.js”"></script>
+  <script type="“text/javascript”" src="“js/jquery.scrollTo.js”"></script>
 </body>

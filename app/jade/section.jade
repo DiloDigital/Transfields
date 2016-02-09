@@ -4,14 +4,14 @@ main.main.nr-max-width.bg--verde
 			img(src="img/banner_portada.jpg", class="img-responsive", alt="portada transfields")
 			h1.title.title--main.text--blanco Contrata ya el vehículo que necesitas
 			h3.title.title--sub3.text--blanco Contamos con unidades para todo tipo de necesidad en el rubro turístico y empresarial
-		.contact__form
+		.contact__form#contactanos
 			.contact__information
 				p Llámanos
 				.fono
 					p 56 226961510
 					p.small Cel 990007317
 				p o escríbenos
-			.contact__formulario#contactanos
+			.contact__formulario
 				form(action="mailer.php", method="POST", class="form", name="contacto",id="contacto")
 					.form__group
 						label(for="nombre") Nombre
@@ -81,5 +81,11 @@ section.contacto.nr-max-width.bg--gris-medium
 			br
 			p.text--blanco Porque tu estás en primer lugar para nosotros y nuestra misión es brindarte una experiencia más que inolvidable, es por ello que contamos con un personal muy atento además de una flota moderna y confortable. No esperes más tiempo, ¡CONTÁCTANOS!
 			.btn__contacto
-				a(href="http://transfields.com/#contactanos") Contáctanos
+				a(href="javascript:$.scrollTo('#contactanos',800);") Contáctanos
 
+script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', type='text/javascript', charset='utf-8')
+script(src='js/main.js')
+script(type='“text/javascript”', src='“js/jquery-2.1.4.js”')
+script(type='“text/javascript”', src='“js/jquery.scrollTo.js”')
+	
+//-script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')

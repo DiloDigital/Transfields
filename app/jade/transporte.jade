@@ -9,7 +9,7 @@ head
 	link(href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic', rel='stylesheet', type='text/css')
 body
 	include header.jade
-	main.main.nr-max-width.bg--verde
+	main.main.nr-max-width.bg--verde#contactanos
 		div.wrap
 			article.transporte
 				h2.title.title--main.text--blanco Escoje tu destino
@@ -80,7 +80,7 @@ body
 			br
 
 			.btn__contacto
-				a(href="#") Contáctanos
+				a(href="javascript:$.scrollTo('#contactanos',800);") Contáctanos
 					
 	section.contacto.nr-max-width.bg--gris-medium
 		div.wrap
@@ -88,5 +88,10 @@ body
 				br
 				p.text--blanco Porque amamos lo que hacemos, en consecuencia brindamos nuestros servicios con el mayor de los gustos. Contamos además con una flota moderna con no más de 5 años de antigüedad. Pensamos siempre en tu seguridad y por sobretodas las cosas estás siempre en primer lugar. ¡No esperes más y contáctanos, estamos esperando por tí!
 				.btn__contacto
-					a(href="#") Contáctanos
+					a(href="javascript:$.scrollTo('#contactanos',800);") Contáctanos
 	include footer.jade
+
+script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js', type='text/javascript', charset='utf-8')
+script(src='js/main.js')
+script(type='“text/javascript”', src='“js/jquery-2.1.4.js”')
+script(type='“text/javascript”', src='“js/jquery.scrollTo.js”')
